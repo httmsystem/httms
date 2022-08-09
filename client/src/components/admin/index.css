@@ -1,0 +1,292 @@
+/* Header */
+.adminLayout {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.topWrappper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.topRight {
+  display: flex;
+}
+
+.topIconContainer {
+  position: relative;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 80px);
+  background-color: rgb(253, 253, 253);
+  position: sticky;
+  top: 100px;
+  overflow: auto;
+}
+.sidebarWrapper {
+  padding: 20px;
+  color: #555;
+}
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+.sidebarTitle {
+  font-size: 15px;
+  color: rgb(139, 139, 139);
+}
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: rgb(211, 234, 255);
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+  font-size: 20px !important;
+}
+
+/* Dashboard */
+.dashboard {
+  flex: 4;
+}
+
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureItem {
+  flex: 1;
+  margin: 0 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.featuredTitle {
+  font-size: 21px;
+}
+.featuredMoneyContainer {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.featureMoney {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.featuredMoneyRate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.featuredIcon {
+  font-size: 14px;
+  margin-left: 5px;
+  color: green;
+}
+
+.featuredIcon.negative {
+  color: red;
+}
+
+.featuredSub {
+  font-size: 15px;
+  color: grey;
+  font-style: italic;
+}
+
+.dashboardWidgets {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 20px;
+  padding-top: 25px;
+}
+.widgetSm {
+  flex: 1;
+}
+
+.widgetSmTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.widgetSmList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.widgetSmListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.widgetSmSA {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgetSmSAName {
+  font-weight: 300;
+}
+
+.widgetSmSAButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+.widgetSmSAIcon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.widgetLg {
+  flex: 2;
+}
+
+.widgetLgTable {
+  width: 100%;
+  border-spacing: 20px;
+}
+.widgetLgTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.widgetLgTh {
+  text-align: center;
+}
+
+.widgetLgStat,
+.widgetLgAcctN,
+.widgetLgDescrpt,
+.widgetLgPax,
+.widgetLgCost,
+.widgetLgIncm {
+  text-align: center;
+}
+
+/* booking */
+
+.booking {
+  flex: 4;
+  padding: 20px 15px;
+}
+.bookingTable {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.datagrid {
+  text-align: center;
+}
+.arrowIcon {
+  font-size: 45px !important;
+}
+
+.title_net {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 4px 0 5px;
+}
+.taxesClass {
+  padding: 2px;
+  border: 20px grey;
+}
+.form-inline {
+  padding: 5px;
+}
+
+/* PASSENGER */
+
+.topping {
+  margin-top: 0.3rem;
+  vertical-align: text-bottom;
+}
+
+.result {
+  margin-top: 1rem;
+}
+
+.toppings-list,
+.total {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.toppings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.toppings-list li {
+  margin-bottom: 0.5rem;
+}
+
+.toppings-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toppings-list li:last-child {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.toppings-list-item label {
+  vertical-align: text-bottom;
+  margin-left: 0.2rem;
+}
+
+.total {
+  margin-top: 1rem;
+}
+.noData {
+  text-align: center;
+}
